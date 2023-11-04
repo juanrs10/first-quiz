@@ -55,7 +55,7 @@ SELECT people.name AS person_name, animals.name AS pet_name, animals.species
 FROM animals
 JOIN people_animals ON animals.animal_id = people_animals.pet_id
 JOIN people ON people_animals.owner_id = people.person_id
-WHERE people.name = "Bessie"
+WHERE people.name = "bessie"
 AND animals.animal_id NOT IN (
     SELECT pet_id
     FROM people_animals
